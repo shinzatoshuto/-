@@ -13,5 +13,27 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="ソース ファイル\main">
+      <UniqueIdentifier>{fb4848c0-07df-44d6-926e-f14e2def0c95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\SceneManager">
+      <UniqueIdentifier>{579c194d-d137-491d-a028-b092d0a84779}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BlackJack.cpp">
+      <Filter>ソース ファイル\main</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>ソース ファイル\SceneManager</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BlackJack.h">
+      <Filter>ソース ファイル\main</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractScene.h">
+      <Filter>ソース ファイル\SceneManager</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
