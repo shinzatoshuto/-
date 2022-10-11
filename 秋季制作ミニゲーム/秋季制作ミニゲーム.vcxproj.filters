@@ -19,6 +19,15 @@
     <Filter Include="ソース ファイル\SceneManager">
       <UniqueIdentifier>{579c194d-d137-491d-a028-b092d0a84779}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\Title">
+      <UniqueIdentifier>{7a4b464e-ca15-4a67-90e0-e678b2e4f584}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Player">
+      <UniqueIdentifier>{94a9f55e-1051-4766-8784-8eb37ecf6bd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Stage">
+      <UniqueIdentifier>{e7e58284-0c78-4a69-8a3d-32fb019922ae}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BlackJack.cpp">
@@ -27,6 +36,15 @@
     <ClCompile Include="SceneManager.cpp">
       <Filter>ソース ファイル\SceneManager</Filter>
     </ClCompile>
+    <ClCompile Include="Title.cpp">
+      <Filter>ソース ファイル\Title</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>ソース ファイル\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Stage.cpp">
+      <Filter>ソース ファイル\Stage</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BlackJack.h">
@@ -34,6 +52,15 @@
     </ClInclude>
     <ClInclude Include="AbstractScene.h">
       <Filter>ソース ファイル\SceneManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Title.h">
+      <Filter>ソース ファイル\Title</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>ソース ファイル\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Stage.h">
+      <Filter>ソース ファイル\Stage</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
