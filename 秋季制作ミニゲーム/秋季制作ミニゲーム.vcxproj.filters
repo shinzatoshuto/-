@@ -28,6 +28,9 @@
     <Filter Include="ソース ファイル\Stage">
       <UniqueIdentifier>{e7e58284-0c78-4a69-8a3d-32fb019922ae}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\Image">
+      <UniqueIdentifier>{6d82d911-50a7-4e5d-85e7-dda5e213927d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BlackJack.cpp">
@@ -45,6 +48,9 @@
     <ClCompile Include="Stage.cpp">
       <Filter>ソース ファイル\Stage</Filter>
     </ClCompile>
+    <ClCompile Include="Images.cpp">
+      <Filter>ソース ファイル\Image</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BlackJack.h">
@@ -61,6 +67,9 @@
     </ClInclude>
     <ClInclude Include="Stage.h">
       <Filter>ソース ファイル\Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="Images.h">
+      <Filter>ソース ファイル\Image</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
