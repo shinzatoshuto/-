@@ -10,8 +10,9 @@
 
 Stage stage;
 Image image;
+Title title;
+BlackJack BJ;
 
-int KeyFlg = 0;
 int NowKey = 0;
 int OldKey = 0;
 
@@ -28,10 +29,10 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR IpCmdLine
 
 	image.InitCard();
 
-	while (ProcessMessage() == 0 && /*sceneManager.Update() != nullptr &&*/ !(KeyFlg & PAD_INPUT_7)) {
+	while (ProcessMessage() == 0 && /*sceneManager.Update() != nullptr &&*/ !(BJ.KeyFlg & PAD_INPUT_7)) {
 		OldKey = NowKey;
 		NowKey = GetJoypadInputState(DX_INPUT_KEY_PAD1);
-		KeyFlg = NowKey & ~OldKey;
+		BJ.KeyFlg = NowKey & ~OldKey;
 		ClearDrawScreen();
 
 		//sceneManager.Draw();

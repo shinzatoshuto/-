@@ -146,6 +146,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="BlackJack.cpp" />
+    <ClCompile Include="GameMain.cpp" />
     <ClCompile Include="Images.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="SceneManager.cpp" />
@@ -155,6 +156,7 @@
   <ItemGroup>
     <ClInclude Include="AbstractScene.h" />
     <ClInclude Include="BlackJack.h" />
+    <ClInclude Include="GameMain.h" />
     <ClInclude Include="Images.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Stage.h" />

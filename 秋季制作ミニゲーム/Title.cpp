@@ -1,10 +1,15 @@
 #include "DxLib.h"
 #include "Title.h"
+#include "BlackJack.h"
 
-//AbstractScene* Title::Update() {
-//
-//}
-//
-//void Title::Draw() {
-//
-//}
+extern BlackJack BJ;
+
+AbstractScene* Title::Update() {
+	if (BJ.KeyFlg & PAD_INPUT_DOWN) {
+
+	}
+}
+
+void Title::Draw() {
+
+}

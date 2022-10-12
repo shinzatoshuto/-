@@ -51,6 +51,9 @@
     <ClCompile Include="Images.cpp">
       <Filter>ソース ファイル\Image</Filter>
     </ClCompile>
+    <ClCompile Include="GameMain.cpp">
+      <Filter>ソース ファイル\main</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BlackJack.h">
@@ -70,6 +73,9 @@
     </ClInclude>
     <ClInclude Include="Images.h">
       <Filter>ソース ファイル\Image</Filter>
+    </ClInclude>
+    <ClInclude Include="GameMain.h">
+      <Filter>ソース ファイル\main</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
