@@ -1,10 +1,15 @@
 #include "DxLib.h"
 #include "GameMain.h"
+#include "BlackJack.h"
 
-AbstractScene* Main::Update(){
+extern BlackJack BJ;
 
-}
-
-void Main::Draw() {
-
-}
+//AbstractScene* Main::Update(){
+//	if (BJ.GameState == 1) {
+//
+//	}
+//}
+//
+//void Main::Draw() {
+//
+//}

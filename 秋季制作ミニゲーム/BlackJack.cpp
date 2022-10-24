@@ -4,14 +4,16 @@
 #include "AbstractScene.h"
 #include "Stage.h"
 #include "Images.h"
+#include "Card.h"
 
 #define WIDTH 1280
 #define HEIGHT 720
 
 Stage stage;
-Image image;
+Image img;
 Title title;
 BlackJack BJ;
+Card card;
 
 int NowKey = 0;
 int OldKey = 0;
@@ -23,11 +25,11 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR IpCmdLine
 	SetGraphMode(WIDTH, HEIGHT, 32);
 	if (DxLib_Init() == -1)return -1;
 	SetDrawScreen(DX_SCREEN_BACK);
-	if (image.LoadImages() == -1)return -1;
+	if (img.LoadImages() == -1)return -1;
 
 	//SceneManager sceneManager(new Title());
 
-	image.InitCard();
+	card.InitCard();
 
 	while (ProcessMessage() == 0 && /*sceneManager.Update() != nullptr &&*/ !(BJ.KeyFlg & PAD_INPUT_7)) {
 		OldKey = NowKey;
@@ -36,8 +38,12 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR IpCmdLine
 		ClearDrawScreen();
 
 		//sceneManager.Draw();
-		stage.BG_Stage();
-		image.DrawCard();
+		if (BJ.KeyFlg & PAD_INPUT_1) {
+			card.InitCard();
+		}
+			stage.BG_Stage();
+			card.DrawCard();
+		
 
 		ScreenFlip();
 	}
