@@ -2,10 +2,13 @@
 
 class Player {
 	int Declaration;   //éŒ¾
+	int Select;
 
-private:
+public:
 	Player();
 
 public:
+	void Update();
+	void Draw();
 	void SelectDeclaration();
 };
